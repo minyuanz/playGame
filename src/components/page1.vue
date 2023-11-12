@@ -76,6 +76,7 @@ const clear = () => {
 </script>
 <template>
     <div class="wrapper">
+        <h1>猜拳</h1>
         <div class="buttons">
             <button class="pssButton" :value=game.value v-for="game in games" @click="play(game)">{{ game.title }}</button>
             <!-- <button class="pssButton" value="Paper">🤚</button>
@@ -107,6 +108,10 @@ const clear = () => {
     /* height: 100%; */
     height: 100vh;
     flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 50px;
 }
 
 .buttons {
